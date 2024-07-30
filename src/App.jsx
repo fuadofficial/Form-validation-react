@@ -2,13 +2,14 @@ import { useState } from "react";
 import "./App.css";
 import "./styles/global.css";
 import { TextInput } from "./components/TextInput/TextInput";
-import {Genter} from "./components/Genter/Genter";
-import {Dropdown} from "./components/Dropdown/Dropdown";
-import {Radio} from "./components/Radio/Radio";
+import { Genter } from "./components/Genter/Genter";
+import { Dropdown } from "./components/Dropdown/Dropdown";
+import { Radio } from "./components/Radio/Radio";
+import { useHandleChange } from "./hooks/useHandleChange";
 
 function App() {
 
-    const [fields, setFields] = useState({
+    const { state: fields, handleChange: customHandleChange } = useHandleChange({
         firstName: "",
         email: "",
         genter: "",
@@ -25,10 +26,7 @@ function App() {
     })
 
     const handleChange = (event) => {
-        setFields((prev) => ({
-            ...prev,
-            [event.target.name]: event.target.value,
-        }));
+        customHandleChange(event)
         isFormValidationOnBlur(event)
     };
 
