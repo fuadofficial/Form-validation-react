@@ -46,3 +46,14 @@ State Management: React useState and useEffect hooks for managing form state and
 Images:
 
 
+
+![Vite + React - Google Chrome 9_1_2024 8_49_13 AM](https://github.com/user-attachments/assets/12260f45-06aa-47b4-908c-4d8330cae1a9)
+
+
+
+errors:
+
+
+
+![Vite + React - Google Chrome 9_1_2024 8_49_21 AM](https://github.com/user-attachments/assets/a7ea3746-deab-43bb-8ee5-64d86495a4f2)
+
